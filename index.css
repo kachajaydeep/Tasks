@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+@font-face {
+    font-family: JosefinSans;
+    src: url('./JosefinSans-Bold.ttf');
+}
+header{
+    background-color: rgba(200, 150, 100, 0.5);
+    padding: 25px;
+    text-align: center;
+    font-family: JosefinSans;
+}
+summary{
+    background-color: red;
+    color: white;
+}
+a:link,a:visited{
+    text-decoration: none;
+   background-color: yellow;
+    padding: 12px;
+    border-radius: 12px 0 12px 0;
+}
+.display{
+    margin-top:25px;
+}

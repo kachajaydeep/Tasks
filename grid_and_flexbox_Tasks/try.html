@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid_flexBox</title>
+<style>
+    .container{
+    display: grid;
+    grid-template-areas: 
+    'card1 card2 card2'
+    'card1 card3 card4'
+    'card5 card3 card6';
+    gap: 30px;
+}
+img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transform: translateY(10px);
+    margin-right: 10px;
+}
+.translate{
+    transform: translate(0,20px);
+}
+.item{
+    background-color: #f1f1f1;
+    border-radius: 8px;
+}
+.item1{
+    grid-area: card1;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+.item2{
+    grid-area: card2;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+.item3{
+    grid-area: card3;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+.item4{
+    grid-area: card4;
+    /* box-shadow: ;    */
+}
+.item5{
+    grid-area: card5;
+}
+.item6{
+    grid-area: card6;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+@media screen and (max-width:768px) {
+    .container{
+        display: grid;
+        grid-template-areas: 'card1 card1 card1'
+                             'card2 card2 card2'
+                             'card3 card3 card3'
+                             'card4 card4 card4'
+                             'card5 card5 card5'
+                             'card6 card6 card6';
+    }
+}
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item1 item">
+            <div class="translate">
+                <h2><img src="../img_5terre.jpg" alt="img_tree">Lorem, ipsum.</h2>
+                <p>dolor sit amet consectetur adipisicing elit. Aperiam perferendis iste nam dicta molestiae
+                    necessitatibus, nemo rem mollitia, a placeat, voluptate nisi vel alias deserunt.</p>
+            </div>
+        </div>
+
+        <div class="item2 item">
+            <h2><img src="../img_5terre.jpg" alt="img_tree">Lorem, ipsum.</h2>
+            <p>dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="item3 item">
+            <div class="translate">
+                <h2><img src="../img_5terre.jpg" alt="img_tree">Lorem, ipsum.</h2>
+                <p>dolor sit amet consectetur adipisicing elit. Aperiam perferendis iste nam dicta molestiae
+                    necessitatibus, nemo rem mollitia, a placeat, voluptate nisi vel alias deserunt.</p>
+                </div>
+        </div>
+
+        <div class="item4 item">
+            <h2><img src="../img_5terre.jpg" alt="img_tree">Lorem, ipsum.</h2>
+            <p>dolor sit amet consectetur adipisicing elit. Aperiam perferendis iste nam dicta molestiae
+                necessitatibus, nemo rem mollitia, a placeat, voluptate nisi vel alias deserunt.</p>
+        </div>
+        <div class="item5 item">
+            <h2><img src="../img_5terre.jpg" alt="img_tree">Lorem, ipsum.</h2>
+            <p>dolor sit amet consectetur adipisicing elit. Aperiam perferendis iste nam dicta molestiae
+                necessitatibus, nemo rem mollitia, a placeat, voluptate nisi vel alias deserunt.</p>
+        </div>
+        <div class="item6 item">
+            <h2><img src="../img_5terre.jpg" alt="img_tree">Lorem, ipsum.</h2>
+            <p>dolor sit amet consectetur adipisicing elit. Aperiam perferendis iste nam dicta molestiae
+                necessitatibus, nemo rem mollitia, a placeat, voluptate nisi vel alias deserunt.</p>
+        </div>
+    </div>
+</body>
+
+</html>
+
