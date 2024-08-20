@@ -30,26 +30,29 @@ h2{
     background-image: linear-gradient(to bottom,hsl(64.12deg 40.16% 49.8%),hsl(233.48deg 27.38% 67.06%));
 }
 .center-four{
-    position: relative;
-    top: 3%;
-    left: 2%;
     background-color: #f1f1f1;
-    padding: 20px;
+    padding: 20px; 
+    border-radius: 12px;                    
 }
 .radius-four{
     border-radius: 35px;
 }
 .center{
-    position: relative;
-    top: 25%;
-    left: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .flex{
     display: flex;
     gap: var(--gap,1rem);
 }
 .testinomial{
-    padding: 2rem;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .testinomial img {
     aspect-ratio: 1;
@@ -72,6 +75,5 @@ h2{
     .testinomial-grid{
         display: flex;
         flex-direction: column;
-
     }
 }
