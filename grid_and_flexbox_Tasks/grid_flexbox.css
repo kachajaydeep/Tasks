@@ -2,7 +2,7 @@ h2{
     margin: 0;
 }
 .full{
-    box-shadow: 7px 12px 7px 3px rgba(0, 0, 0, 0.6);
+    box-shadow: 5px 6px 5px rgba(0, 0, 0, 0.6);
     border-radius: 12px;
 }
 .item1{
@@ -20,7 +20,7 @@ h2{
 .testinomial-grid{
     display: grid;
     /* width: min(95%, 70rem); */
-    gap: var(--gap,2rem);
+    gap: var(--gap,1.5rem);
     grid-template-columns:repeat(3,1fr);
 }
 .gradient{
@@ -30,9 +30,13 @@ h2{
     background-image: linear-gradient(to bottom,hsl(64.12deg 40.16% 49.8%),hsl(233.48deg 27.38% 67.06%));
 }
 .center-four{
+    display: flex;
+    flex-direction: column;                 
     background-color: #f1f1f1;
-    padding: 20px; 
-    border-radius: 12px;                    
+    padding: 20px;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
 }
 .radius-four{
     border-radius: 35px;
