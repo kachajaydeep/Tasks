@@ -64,6 +64,11 @@
     display: flex;
     gap: var(--gap, 1.3rem);
 }
+.justify{
+    display: flex;
+    gap: var(--gap,1.3rem);
+    justify-content: center;
+}
 .testinomial{
     padding: 1.2rem;
     display: flex;
@@ -83,6 +88,11 @@
     .testinomial-grid{
         display: flex;
         flex-direction: column;
+    }
+    .justify{
+        display: flex;
+        gap: var(--gap,1.3rem);
+        justify-content: start;
     }
     .item6{
         height: 150px;
