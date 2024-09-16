@@ -7,40 +7,36 @@
     <link rel="stylesheet" href="./slider.css">
 </head>
 <body>
-   <h1>CSS-only Carousel</h1>
-
-<p>This carousel is created with HTML and CSS only.</p>
-
-<section class="carousel" aria-label="Gallery">
+<section class="carousel">
   <ol class="carousel__viewport">
     <li id="carousel__slide1" class="carousel__slide">
 
       <div class="carousel__snapper">
-        <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
+        <a href="#carousel__slide5" class="carousel__prev">Go to last slide</a>
         <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
-          <div class="message-box">
-            <p class="bg-color">
-            "We have been working with Positivus for the past year and have seen a significant increase in website traffic and
-            leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our
-            business. We highly recommend Positivus to any company looking to grow their online presence."
-            </p>
-          </div>
       </div>
 
-    </li>
-
-    <li id="carousel__slide2" class="carousel__slide">
-
-      <div class="carousel__snapper">
-        <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
-        <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
-      </div>
-      
       <div class="message-box">
         <p class="bg-color">
         "We have been working with Positivus for the past year and have seen a significant increase in website traffic and
         leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our
         business. We highly recommend Positivus to any company looking to grow their online presence."
+        </p>
+      </div>
+    </li>
+
+    <li id="carousel__slide2" class="carousel__slide">
+
+      <div class="carousel__snapper">
+      </div>
+      <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+      
+      <div class="message-box">
+        <p class="bg-color">
+          "We have been working with Positivus for the past year and have seen a significant increase in website traffic and
+          leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our
+          business. We highly recommend Positivus to any company looking to grow their online presence."
         </p>
       </div>
     </li>
@@ -65,7 +61,7 @@
       
       <div class="carousel__snapper">
         <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
-        <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
+        <a href="#carousel__slide5" class="carousel__next">Go to first slide</a>
       </div>
       
       <div class="message-box">
@@ -77,26 +73,51 @@
       </div>
     </li>
 
+    <li id="carousel__slide5" class="carousel__slide">
+
+      <div class="carousel__snapper">
+        <a href="#carousel__slide4" class="carousel__prev">Go to previous slide</a>
+        <a href="#carousel__slide1" class="carousel__next">Go to next slide</a>
+      </div>
+      
+      <div class="horizontal">
+          <div class="message-box">
+            <p class="bg-color">
+                "We have been working with Positivus for the past year and have seen a significant increase in website traffic and
+                leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our
+                business. We highly recommend Positivus to any company looking to grow their online presence."
+            </p>
+          </div>
+
+          <div class="down">
+        <h2 style="color: #B9FF66;margin: 0;padding: 0;">John Smith</h2>
+        <p style="color: #FFFFFF;margin: 0;padding: 0;">Marketing Director at XYZ Corp</p>
+          </div>
+      </div>
+    </li>
   </ol>
 
   <aside class="carousel__navigation">
     <ol class="carousel__navigation-list">
       <li class="carousel__navigation-item">
-        <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
+        <a href="#carousel__slide1" class="carousel__navigation-button"><img src="./Vector.png" alt="Vector"></a>
       </li>
 
       <li class="carousel__navigation-item">
-        <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
+        <a href="#carousel__slide2" class="carousel__navigation-button"><img src="./Vector.png" alt="Vector"></a>
       </li>
 
       <li class="carousel__navigation-item">
-        <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
+        <a href="#carousel__slide3" class="carousel__navigation-button"><img src="./Vector.png" alt="Vector"></a>
       </li>
 
       <li class="carousel__navigation-item">
-        <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>
+        <a href="#carousel__slide4" class="carousel__navigation-button"><img src="./Vector.png" alt=""></a>
       </li>
 
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide5" class="carousel__navigation-button"><img src="./Vector.png" alt=""></a>
+      </li>
     </ol>
 
   </aside>
