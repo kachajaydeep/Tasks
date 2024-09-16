@@ -77,7 +77,7 @@ nav {
     width: 90%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -203,7 +203,6 @@ input {
     display: flex;
     flex-direction: column;
 }
-
 .label {
     font-family: 'poppins';
     font-weight: 500;
@@ -262,7 +261,11 @@ input {
     font-weight: 400;
     font-style: normal;
 }
-
+.large{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
 .s-3 {
     object-fit: cover;
     object-position: left;
@@ -333,8 +336,8 @@ summary{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 5px;
-    /* position: relative; */
+    padding: 0;
+    transition: padding .4s;
     list-style: none;
 }
 .left2{
@@ -354,7 +357,11 @@ summary::after{
     border: none;
 }
 details[open] {
+    .p1{
+        padding: 28px 0;
+    }
     summary{
+        padding: 20px 5px;
         &::after{
             content: "−";
             background-color: #F3F3F3;
@@ -366,7 +373,8 @@ details[open] {
 }
 .p1{
     border-top: 1px solid black;
-    padding: 28px 0;
+    padding: 0 0;
+    transition: padding .4s ease-in-out;
 }
 .container-7{
     width: 90%;
@@ -378,7 +386,7 @@ details[open] {
     display: flex;
     flex-direction: column;
     border: 1px solid black;
-    padding: 28px 24px 10px 28px;
+    padding: 28px 19px 10px 22px;
     border-radius: 35px;
 }
 .top{
@@ -446,6 +454,7 @@ details[open] {
     list-style: none;
     margin: 0;
     padding: 0;
+    gap: 20px;
   }
   .carousel {
     position: relative;
@@ -462,7 +471,7 @@ details[open] {
    position: relative;
    flex: 0 0 100%;
    width: 100%;
-   height: 365px;
+   height: 390px;
    background-color: #191A23;
    display: flex;
    align-items: center;
@@ -576,7 +585,7 @@ details[open] {
     pointer-events: none;
   }
   
-  .carousel::before {
+.carousel::before {
     background-image: url("./png/arrow_back.svg");
   }
   
@@ -602,7 +611,10 @@ details[open] {
    height: 0;
    position: absolute;
  }
- 
+ .right-side-2{
+    position: absolute;
+    right: 0;
+ }
  .message-box::before {
    border-left: 20px solid transparent;
    border-right: 20px solid transparent;
@@ -620,9 +632,16 @@ details[open] {
  }
  .bg-color{
    padding: 30px 30px;
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 16px;
  }
  .down{
    margin: 35px 0 0 45px;
+ }
+ .btn3{
+    width: 450px;
  }
  @media screen and (max-width:767px) {
        .message-box{
@@ -632,7 +651,7 @@ details[open] {
          top: 18px;
        }
        .carousel__slide{
-         height: 500px;
+         height: 530px;
        }
        .carousel::before{
          left: 17px;
@@ -655,9 +674,8 @@ details[open] {
 footer{
     background-color: #000000;
     width: 90%;
-    /* padding: 50px 50px; */
     margin: 100px 0 0 0;
-    border-radius: 30px;
+    border-radius: 30px 30px 0 0;
 }
 .top-side{
     display: flex;
@@ -675,6 +693,9 @@ footer{
     background-color: white;
     padding: 7px 9px;
     border-radius: 50%;
+}
+.facebook{
+    padding: 7px 11px;  
 }
 .right-side-bar{
     display: flex;
@@ -752,19 +773,25 @@ input[type=email]{
     justify-content: space-between;
     background-color: #F3F3F3;
     align-items: center;
+    position: relative;
 }
 .img2 {
     object-fit: cover;
     max-width: 530px;
-    height: 619px;
-    object-position: 174px 0px;
+    height: 528px;
+    object-position: 219px 0;
 }
 /* form code */
 form{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    
+    padding: 35px 40px;
+}
+.verti{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 input[type="radio"] {
     display: inline;
@@ -800,27 +827,44 @@ input[type="radio"] {
     visibility: visible;
     background-color: #FFFFFF;
     border: 1px solid black;
-    padding: 0;
     outline: none;
-    padding: 0 14px;    
+    padding: 20px 209px 20px 20px;
     border-radius: 15px;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  .lab{
+    font-size: 16px;
   }
   #email{
+    display: block;
+    visibility: visible;
     background-color: #FFFFFF;
     border: 1px solid black;
-    padding: 0;
     outline: none;
-    padding: 0 14px;    
+    padding: 20px 209px 20px 20px;
     border-radius: 15px;
     width: auto;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  .em{
+    font-size: 16px;
   }
   #msg{
     display: block;
+    font-size: 16px;
   }
   #message{
     border-radius: 15px;
     outline: none;
     padding: 14px 14px; 
+    margin-top: 10px;
+  }
+  textarea{
+    height: 200px;
+    width: 450px;
+    font-size: 18px;
   }
 @media screen and (max-width:1024px) {
     .center {
@@ -830,7 +874,8 @@ input[type="radio"] {
         padding: 0 0 0 76px;
     } */
     .img2{
-        display: none;
+        object-position: 15px 0;
+        max-width: 333px;
     }
 }
 @media screen and (max-width:1000px) {
@@ -888,7 +933,18 @@ input[type="radio"] {
         justify-content: center;
         gap: 20px;
     }
-    
+    #myfname{
+        padding: 20px 118px 20px 20px;
+      }
+      #email{
+        padding: 20px 118px 20px 20px;
+      }
+      textarea{
+        width: 358px;
+      }
+      .btn3 {
+        width: 360px;
+    }
 }
 /* mobile view sidebar */
 @media screen and (max-width:768px) {
@@ -914,7 +970,9 @@ input[type="radio"] {
         flex-direction: column;
         text-align: center;
     }
-
+    .container-3{
+        justify-content: center;
+    }
     .container-4 {
         flex-direction: column;
         text-align: center;
@@ -1036,13 +1094,14 @@ input[type="radio"] {
         top: 10px;
         right: 90%;
     }
-
+    .btn3{
+        width: 313px;
+    }
     /* sidebar main content */
     .main {
         flex-direction: column;
         width: 90%;
     }
-
     .nav {
         flex-direction: column;
     }
@@ -1055,4 +1114,62 @@ input[type="radio"] {
     footer{
         border-radius: 0px;
     }
+    textarea{
+        width: 313px;
+    }
+    .img2{
+        display: none;
+        visibility: none;
+    }
+    .hor{
+        display: flex;
+        justify-content: center;
+    }
+    .image1{
+        justify-content: center;
+        border-radius: 40px;
+    }
+    #myfname{
+        display: block;
+        visibility: visible;
+        background-color: #FFFFFF;
+        border: 1px solid black;
+        outline: none;
+        padding: 20px 71px 20px 20px;
+        border-radius: 15px;
+      }
+      #email{
+        display: block;
+        visibility: visible;
+        background-color: #FFFFFF;
+        border: 1px solid black;
+        outline: none;
+        padding: 20px 71px 20px 20px;
+        border-radius: 15px;
+      }
+      #msg{
+        display: block;
+      }
+      #message{
+        border-radius: 15px;
+        outline: none;
+        padding: 14px 14px; 
+      }
+      .font1{
+        font-size: 18px;
+      }
 }                                               
+
+@media screen and (max-width: 930px) and (min-width: 769px) {
+    .linkdine-img {
+        padding: 2px 6px;
+    }
+    .pic1 {
+        width: 50px;
+        height: 50px;
+    }
+    .pic2{
+        width: 10px;
+        height: 10px;
+    }
+}
