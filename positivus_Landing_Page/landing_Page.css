@@ -412,9 +412,244 @@ details[open] {
     justify-content: center;
 }
 /* slider code */
-.carousel{
-
-}
+@keyframes tonext {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: 100%;
+    }
+    98% {
+      left: 100%;
+    }
+    99% {
+      left: 0;
+    }
+  }
+  
+  @keyframes tostart {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: -300%;
+    }
+    98% {
+      left: -300%;
+    }
+    99% {
+      left: 0;
+    }
+  }
+  
+  ol, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .carousel {
+    position: relative;
+    width: 90%;
+  }
+  
+  .carousel__viewport {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  
+  .carousel__slide {
+   position: relative;
+   flex: 0 0 100%;
+   width: 100%;
+   height: 365px;
+   background-color: #191A23;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 25px;
+  }
+  
+  .carousel__slide:nth-child(even) {
+    background-color: #191A23;
+  }
+  
+  .carousel__slide:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-40%,70px);
+    color: #fff;
+    font-size: 2em;
+  }
+  
+  .carousel__snapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: center;
+  }
+  
+  @media (hover: hover) {
+    .carousel__snapper {
+      animation-name: tonext, snap;
+      animation-timing-function: ease;
+      animation-duration: 4s;
+    }
+  
+    .carousel__slide:last-child .carousel__snapper {
+      animation-name: tostart, snap;
+    }
+  }
+  
+  .carousel:hover .carousel__snapper,
+  .carousel:focus-within .carousel__snapper {
+    animation-name: none;
+  }
+  
+  .carousel__navigation {
+    position: absolute;
+    right: 0;
+    bottom: 18px;
+    left: 0;
+    text-align: center;
+  }
+  
+  .carousel__navigation-list,
+  .carousel__navigation-item {
+    display: inline-block;
+  }
+  
+  .carousel__navigation-button {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: transform 0.1s;
+  }
+  
+  .carousel::before,
+  .carousel::after {
+     position: absolute;
+     bottom: 0;
+     width: 20px;
+     height: 20px;
+     transform: translateY(-50%);
+     font-size: 0;
+     outline: 0;
+     margin-top: 37.5%;
+  }
+  .carousel__prev,
+  .carousel__next
+  {
+   position: absolute;
+   bottom: 0;
+   width: 20px;
+   height: 20px;
+   transform: translateY(-42%);
+   font-size: 0;
+   outline: 0;
+  }
+  
+  .carousel::before,
+  .carousel__prev {
+    left: 12rem;
+    bottom: 1rem;
+  }
+  
+  .carousel::after,
+  .carousel__next {
+    right:12.5rem;
+    bottom:1rem;
+  }
+  
+  .carousel::before,
+  .carousel::after {
+    content: '';
+    z-index: 1;
+    background: center center no-repeat;
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    text-align: center;
+    pointer-events: none;
+  }
+  
+  .carousel::before {
+    background-image: url("./png/arrow_back.svg");
+  }
+  
+  .carousel::after {
+    background-image: url("./png/arrow_forward.svg");
+  }
+  .horizontal{
+   position: absolute;
+   top: 38px;
+  }
+  .message-box {
+   width: 600px;
+   border: 2px solid #B9FF66;
+   position: relative;
+   border-radius: 25px;
+   color: white;
+ }
+ 
+ .message-box::before,
+ .message-box::after {
+   content: "";
+   width: 0;
+   height: 0;
+   position: absolute;
+ }
+ 
+ .message-box::before {
+   border-left: 20px solid transparent;
+   border-right: 20px solid transparent;
+   border-top: 20px solid #B9FF66;
+   bottom: -21px;
+   left: 26px;
+ }
+ 
+ .message-box::after {
+   border-left: 20px solid transparent;
+   border-right: 20px solid transparent;
+   border-top: 20px solid #191A23;
+   bottom: -19.3px;
+   left: 26px;
+ }
+ .bg-color{
+   padding: 30px 30px;
+ }
+ .down{
+   margin: 35px 0 0 45px;
+ }
+ @media screen and (max-width:767px) {
+       .message-box{
+         width: 300px;
+       }
+       .horizontal{
+         top: 18px;
+       }
+       .carousel__slide{
+         height: 500px;
+       }
+       .carousel::before{
+         left: 17px;
+       }
+       .carousel::after{
+         right: 17px;
+       }
+ }
+ @media screen and (max-width:344px) {
+     .carousel__slide{
+       height: 460px;
+     }
+     .message-box{
+       width: 269px;
+     }
+ }
+ /* \end{code} */
 
 /* footer code */
 footer{
@@ -445,7 +680,10 @@ footer{
     display: flex;
     gap: 20px;
 }
-
+input[type=radio]{
+    display: inline;
+    visibility: visible;
+}
 .contact{
     background-color: #B9FF66;
     border-radius: 6px;
@@ -512,6 +750,8 @@ input[type=email]{
     width: 90%;
     /* gap: 400px; */
     justify-content: space-between;
+    background-color: #F3F3F3;
+    align-items: center;
 }
 .img2 {
     object-fit: cover;
@@ -519,13 +759,76 @@ input[type=email]{
     height: 619px;
     object-position: 174px 0px;
 }
+/* form code */
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+input[type="radio"] {
+    display: inline;
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px !important;
+    overflow: hidden;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+  }
+  .form-control::before {
+    content: '';
+    display: inline-block;
+    height: 1.25rem;
+    width: 1.25rem;
+    border: solid 1px #ccc;
+    border-radius: 50%;
+    margin: -5px 0.5em;
+    transition: border ease-in 150ms, box-shadow ease-in 150ms;
+    line-height: 0;
+  }
+  input[type="radio"]:checked + label,
+  input[type="radio"]:focus + label {
+    color: black;
+  }
+  input[type="radio"]:checked + label.form-control::before {
+    background: radial-gradient(0.75em circle at center, #B9FF66 50%, transparent 55%);
+    border-color: currentColor;
+  }
+  #myfname{
+    display: block;
+    visibility: visible;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    padding: 0;
+    outline: none;
+    padding: 0 14px;    
+    border-radius: 15px;
+  }
+  #email{
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    padding: 0;
+    outline: none;
+    padding: 0 14px;    
+    border-radius: 15px;
+    width: auto;
+  }
+  #msg{
+    display: block;
+  }
+  #message{
+    border-radius: 15px;
+    outline: none;
+    padding: 14px 14px; 
+  }
 @media screen and (max-width:1024px) {
     .center {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    .image1 {
+    /* .image1 {
         padding: 0 0 0 76px;
-    }
+    } */
     .img2{
         display: none;
     }
