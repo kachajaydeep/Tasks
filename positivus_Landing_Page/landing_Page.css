@@ -1108,6 +1108,17 @@ input[type="radio"] {
     }
     .nav {
         flex-direction: column;
+        font-family: "Space Grotesk", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .grotesk{
+        font-family: "Space Grotesk", sans-serif;
+        font-optical-sizing: 18px;
+        font-weight: 400;
+        font-style: normal;
+    }
     }
     .right {
         display: none;
@@ -1161,8 +1172,7 @@ input[type="radio"] {
       }
       .font1{
         font-size: 18px;
-      }
-}                                               
+      }                                         
 
 @media screen and (max-width: 930px) and (min-width: 769px) {
     .linkdine-img {
