@@ -6,24 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table</title>
     <link rel="stylesheet" href="./table.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 
 <body>
 
-    <table cellspacing="0" cellpadding="0">
-        <caption>
+    <div class="main" style="overflow-y:scroll;">
+        <div class="section">
             <h2>Customer's Orders</h2>
-            <form action="./action.php">
-                <input type="text" name="search" placeholder="Search Data..">
-                <button type="submit"><img src="./images/search.png" alt="" width="20px" height="20px"></button>
-                <img src="./images/export.png" alt="" width="20px" height="20px">
-            </form>
-        </caption>
+            <input type="text" name="search" placeholder="Search Data..">
+            <img class="arrow" src="./images/export.png" alt="arrow-right" >
+        </div>
+        
 
-        <thead>
+        <table cellspacing="0" cellpadding="0" >
+
             <tr>
                 <th>Id</th>
                 <th>Customer</th>
@@ -32,14 +28,15 @@
                 <th>Status</th>
                 <th>Amount</th>
             </tr>
-        </thead>
-        <tbody>
+            
+            <!-- table body -->
+             
             <tr>
                 <td>1</td>
                 <td><img class="img" src="./images/Zinzu Chan Lee.jpg" alt="Zinzu Chan Lee"> Zinzu Chan Lee</td>
                 <td>Seoul</td>
                 <td>17 Dec, 2022</td>
-                <td>Delivered</td>
+                <td><button class="status1">Delivered</button></td>
                 <td>$128.90</td>
             </tr>
 
@@ -48,7 +45,7 @@
                 <td><img class="img" src="./images/Jeet Saru.jpg" alt="Jeet Saru">Jeet Saru</td>
                 <td>Kathmandu</td>
                 <td>20 Aug, 2023</td>
-                <td>Cancelled</td>
+                <td><button class="status2">Cancelled</button></td>
                 <td>$5350.90</td>
             </tr>
 
@@ -57,7 +54,7 @@
                 <td><img class="img" src="./images/Sonal Gharti.jpg" alt="Sonal Gharti">Sonal Gharti</td>
                 <td>Tokyo</td>
                 <td>14 Mar, 2023</td>
-                <td>Shipped</td>
+                <td><button class="status3">Shipped</button></td>
                 <td>$210.90</td>
             </tr>
 
@@ -66,7 +63,7 @@
                 <td><img class="img" src="./images/Alson GC.jpg" alt="Sonal Alson GC"> Sonal Alson GC</td>
                 <td>New Delhi</td>
                 <td>25 May, 2023</td>
-                <td>Delivered</td>
+                <td><button class="status1">Delivered</button></td>
                 <td>$149.70</td>
             </tr>
 
@@ -75,7 +72,7 @@
                 <td><img class="img" src="./images/Sarita Limbu.jpg" alt="Sarita Limbu">Sarita Limbu</td>
                 <td>Paris</td>
                 <td>23 Apr, 2023</td>
-                <td>Pending</td>
+                <td><button class="status4">Pending</button></td>
                 <td>$399.99</td>
             </tr>
 
@@ -84,7 +81,7 @@
                 <td><img class="img" src="./images/Alex Gonley.jpg" alt="Alex Gonley">Alex Gonley</td>
                 <td>London</td>
                 <td>23 Apr, 2023</td>
-                <td>Cancelled</td>
+                <td><button class="status1">Cancelled</button></td>
                 <td>$399.99</td>
             </tr>
 
@@ -93,7 +90,7 @@
                 <td><img class="img" src="./images/Jeet Saru.jpg" alt="Jeet Saru">Jeet Saru</td>
                 <td>New York</td>
                 <td>20 May, 2023</td>
-                <td>Delivered</td>
+                <td><button class="status2">Delivered</button></td>
                 <td>$399.99</td>
             </tr>
 
@@ -102,7 +99,7 @@
                 <td><img class="img" src="./images/json.png" alt="json">json</td>
                 <td>Tokyo</td>
                 <td>14 Mar, 2023</td>
-                <td>Shipped</td>
+                <td><button class="status3">Shipped</button></td>
                 <td>$210.90</td>
             </tr>
 
@@ -111,7 +108,7 @@
                 <td><img class="img" src="./images/pdf.png" alt="pdf">pdf</td>
                 <td>Tokyo</td>
                 <td>14 Mar, 2023</td>
-                <td>Shipped</td>
+                <td><button class="status4">Shipped</button></td>
                 <td>$210.90</td>
             </tr>
 
@@ -120,7 +117,7 @@
                 <td><img class="img" src="./images/csv.png" alt="csv">csv</td>
                 <td>Tokyo</td>
                 <td>14 Mar, 2023</td>
-                <td>Shipped</td>
+                <td><button class="status1">Shipped</button></td>
                 <td>$210.90</td>
             </tr>
 
@@ -129,12 +126,12 @@
                 <td><img class="img" src="./images/excel.png" alt="excel">excel</td>
                 <td>Tokyo</td>
                 <td>14 Mar, 2023</td>
-                <td>Shipped</td>
+                <td><button class="status2">Shipped</button></td>
                 <td>$210.90</td>
             </tr>
-        </tbody>
-
-    </table>
+        
+        </table>
+    </div>
 
 
 </body>
