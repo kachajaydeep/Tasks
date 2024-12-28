@@ -12,12 +12,6 @@ body{
     background-attachment: fixed;
     overflow: hidden;
 }
-table{
-    width: 90%;
-    height: 60%;
-    /* border: none; */
-    margin: auto;
-}
 .main{
     position: relative;
     top: 20px;
@@ -27,6 +21,18 @@ table{
     height: 600px;
     margin: auto;
     border-radius: 10px;
+}
+.container{
+    width: 100%;
+    height: 600px;
+}
+.t1{
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    width: 94%;
+    height: 600px;
 }
 .section{
     position: sticky;
