@@ -10,127 +10,134 @@
 
 <body>
 
-    <div class="main" style="overflow-y:scroll;">
+    <div class="main" >
         <div class="section">
             <h2>Customer's Orders</h2>
             <input type="text" name="search" placeholder="Search Data..">
             <img class="arrow" src="./images/export.png" alt="arrow-right" >
         </div>
         
+        <div class="container" style="overflow-y:scroll;">
+            <table cellspacing="0" cellpadding="0" class="t1">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Customer</th>
+                        <th>Location</th>
+                        <th>Order Date</th>
+                        <th>Status</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
 
-        <table cellspacing="0" cellpadding="0" >
-
-            <tr>
-                <th>Id</th>
-                <th>Customer</th>
-                <th>Location</th>
-                <th>Order Date</th>
-                <th>Status</th>
-                <th>Amount</th>
-            </tr>
-            
-            <!-- table body -->
-             
-            <tr>
-                <td>1</td>
-                <td><img class="img" src="./images/Zinzu Chan Lee.jpg" alt="Zinzu Chan Lee"> Zinzu Chan Lee</td>
-                <td>Seoul</td>
-                <td>17 Dec, 2022</td>
-                <td><button class="status1">Delivered</button></td>
-                <td>$128.90</td>
-            </tr>
-
-            <tr>
-                <td>2</td>
-                <td><img class="img" src="./images/Jeet Saru.jpg" alt="Jeet Saru">Jeet Saru</td>
-                <td>Kathmandu</td>
-                <td>20 Aug, 2023</td>
-                <td><button class="status2">Cancelled</button></td>
-                <td>$5350.90</td>
-            </tr>
-
-            <tr>
-                <td>3</td>
-                <td><img class="img" src="./images/Sonal Gharti.jpg" alt="Sonal Gharti">Sonal Gharti</td>
-                <td>Tokyo</td>
-                <td>14 Mar, 2023</td>
-                <td><button class="status3">Shipped</button></td>
-                <td>$210.90</td>
-            </tr>
-
-            <tr>
-                <td>4</td>
-                <td><img class="img" src="./images/Alson GC.jpg" alt="Sonal Alson GC"> Sonal Alson GC</td>
-                <td>New Delhi</td>
-                <td>25 May, 2023</td>
-                <td><button class="status1">Delivered</button></td>
-                <td>$149.70</td>
-            </tr>
-
-            <tr>
-                <td>5</td>
-                <td><img class="img" src="./images/Sarita Limbu.jpg" alt="Sarita Limbu">Sarita Limbu</td>
-                <td>Paris</td>
-                <td>23 Apr, 2023</td>
-                <td><button class="status4">Pending</button></td>
-                <td>$399.99</td>
-            </tr>
-
-            <tr>
-                <td>6</td>
-                <td><img class="img" src="./images/Alex Gonley.jpg" alt="Alex Gonley">Alex Gonley</td>
-                <td>London</td>
-                <td>23 Apr, 2023</td>
-                <td><button class="status1">Cancelled</button></td>
-                <td>$399.99</td>
-            </tr>
-
-            <tr>
-                <td>7</td>
-                <td><img class="img" src="./images/Jeet Saru.jpg" alt="Jeet Saru">Jeet Saru</td>
-                <td>New York</td>
-                <td>20 May, 2023</td>
-                <td><button class="status2">Delivered</button></td>
-                <td>$399.99</td>
-            </tr>
-
-            <tr>
-                <td>8</td>
-                <td><img class="img" src="./images/json.png" alt="json">json</td>
-                <td>Tokyo</td>
-                <td>14 Mar, 2023</td>
-                <td><button class="status3">Shipped</button></td>
-                <td>$210.90</td>
-            </tr>
-
-            <tr>
-                <td>9</td>
-                <td><img class="img" src="./images/pdf.png" alt="pdf">pdf</td>
-                <td>Tokyo</td>
-                <td>14 Mar, 2023</td>
-                <td><button class="status4">Shipped</button></td>
-                <td>$210.90</td>
-            </tr>
-
-            <tr>
-                <td>10</td>
-                <td><img class="img" src="./images/csv.png" alt="csv">csv</td>
-                <td>Tokyo</td>
-                <td>14 Mar, 2023</td>
-                <td><button class="status1">Shipped</button></td>
-                <td>$210.90</td>
-            </tr>
-
-            <tr>
-                <td>11</td>
-                <td><img class="img" src="./images/excel.png" alt="excel">excel</td>
-                <td>Tokyo</td>
-                <td>14 Mar, 2023</td>
-                <td><button class="status2">Shipped</button></td>
-                <td>$210.90</td>
-            </tr>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><img class="img" src="./images/Zinzu Chan Lee.jpg" alt="Zinzu Chan Lee"> Zinzu Chan Lee</td>
+                        <td>Seoul</td>
+                        <td>17 Dec, 2022</td>
+                        <td><button class="status1">Delivered</button></td>
+                        <td>$128.90</td>
+                    </tr>
         
-        </table>
+                    <tr>
+                        <td>2</td>
+                        <td><img class="img" src="./images/Jeet Saru.jpg" alt="Jeet Saru">Jeet Saru</td>
+                        <td>Kathmandu</td>
+                        <td>20 Aug, 2023</td>
+                        <td><button class="status2">Cancelled</button></td>
+                        <td>$5350.90</td>
+                    </tr>
+        
+                    <tr>
+                        <td>3</td>
+                        <td><img class="img" src="./images/Sonal Gharti.jpg" alt="Sonal Gharti">Sonal Gharti</td>
+                        <td>Tokyo</td>
+                        <td>14 Mar, 2023</td>
+                        <td><button class="status3">Shipped</button></td>
+                        <td>$210.90</td>
+                    </tr>
+        
+                    <tr>
+                        <td>4</td>
+                        <td><img class="img" src="./images/Alson GC.jpg" alt="Sonal Alson GC"> Sonal Alson GC</td>
+                        <td>New Delhi</td>
+                        <td>25 May, 2023</td>
+                        <td><button class="status1">Delivered</button></td>
+                        <td>$149.70</td>
+                    </tr>
+        
+                    <tr>
+                        <td>5</td>
+                        <td><img class="img" src="./images/Sarita Limbu.jpg" alt="Sarita Limbu">Sarita Limbu</td>
+                        <td>Paris</td>
+                        <td>23 Apr, 2023</td>
+                        <td><button class="status4">Pending</button></td>
+                        <td>$399.99</td>
+                    </tr>
+        
+                    <tr>
+                        <td>6</td>
+                        <td><img class="img" src="./images/Alex Gonley.jpg" alt="Alex Gonley">Alex Gonley</td>
+                        <td>London</td>
+                        <td>23 Apr, 2023</td>
+                        <td><button class="status1">Cancelled</button></td>
+                        <td>$399.99</td>
+                    </tr>
+        
+                    <tr>
+                        <td>7</td>
+                        <td><img class="img" src="./images/Jeet Saru.jpg" alt="Jeet Saru">Jeet Saru</td>
+                        <td>New York</td>
+                        <td>20 May, 2023</td>
+                        <td><button class="status2">Delivered</button></td>
+                        <td>$399.99</td>
+                    </tr>
+        
+                    <tr>
+                        <td>8</td>
+                        <td><img class="img" src="./images/json.png" alt="json">json</td>
+                        <td>Tokyo</td>
+                        <td>14 Mar, 2023</td>
+                        <td><button class="status3">Shipped</button></td>
+                        <td>$210.90</td>
+                    </tr>
+        
+                    <tr>
+                        <td>9</td>
+                        <td><img class="img" src="./images/pdf.png" alt="pdf">pdf</td>
+                        <td>Tokyo</td>
+                        <td>14 Mar, 2023</td>
+                        <td><button class="status4">Shipped</button></td>
+                        <td>$210.90</td>
+                    </tr>
+        
+                    <tr>
+                        <td>10</td>
+                        <td><img class="img" src="./images/csv.png" alt="csv">csv</td>
+                        <td>Tokyo</td>
+                        <td>14 Mar, 2023</td>
+                        <td><button class="status1">Shipped</button></td>
+                        <td>$210.90</td>
+                    </tr>
+        
+                    <tr>
+                        <td>11</td>
+                        <td><img class="img" src="./images/excel.png" alt="excel">excel</td>
+                        <td>Tokyo</td>
+                        <td>14 Mar, 2023</td>
+                        <td><button class="status2">Shipped</button></td>
+                        <td>$210.90</td>
+                    </tr>
+                </tbody>
+                
+            </table>
+        </div> 
+
+
+        <!-- <table cellspacing="0" cellpadding="0" > -->
+
+            
     </div>
 
 
