@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #25252b;
+}
+button{
+    border: none;
+}
+.box{
+    position: relative;
+    width: 200px;
+    height: 70px;
+    background: conic-gradient(from var(--aa), transparent, white);
+    animation: animate 6s linear infinite;
+    border-radius: 50px;
+    filter: grayscale(1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 5px;
+}
+.box::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* animation: animate 6s linear infinite; */
+}
+.box::after{
+    content: "";
+    position: absolute;
+    inset: 1px;
+    background: #2d2d39;
+    border-radius: 50px;
+    z-index: -1;
+}
+.box h2{
+    color: #fff;
+    z-index: 2;
+}
+@property --aa{
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 0deg;
+}
+@keyframes animate {
+    0%{
+        --aa:0deg;
+    }
+    100%{
+        --aa:360deg;
+    }
+}

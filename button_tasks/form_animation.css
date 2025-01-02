@@ -1,0 +1,115 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #000;
+	min-height: 100vh;
+}
+.text{
+	line-height: 25px;
+	font-weight: 100;
+	font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+	color: rgb(0, 91, 148);
+}
+input[type=text],input[type=email],textarea{
+	width: 90%;
+    position: relative;
+    padding: 1em;
+    margin: 10px 0;
+	background-color: #000;
+	border: none;
+	color: #fff;
+	font-size: 1em;
+	outline:0.1px solid grey;
+	border-radius: 12px;
+}
+form > input:focus, textarea:focus{
+	outline: 2px solid rgb(0, 91, 148);
+}
+button{
+	border: none;
+	padding: 14px 16px;
+	color: #fff;
+	background-color: rgb(0, 91, 148);
+	border-radius: 20px;
+	font-size: 1em;
+}
+p{
+	color: white;
+}
+.forms {
+	width: 40%;
+	position: relative;
+	background: conic-gradient(from var(--aa),
+	 #ff9eff 5%, 
+	 #ff9eff 15%,
+	 transparent 5%,
+	 transparent 5%,
+	 transparent 50%);
+	animation: animate 6s linear infinite;
+	margin: 20px;
+	height: 600px;
+    backdrop-filter: url();
+	border-radius: 20px;
+	outline: 0.1px solid gray;
+}
+::placeholder{
+	color: rgb(0, 91, 148);
+	font-weight: medium;
+	font-size: 15px;
+}
+.inner{
+	position: absolute;
+	inset: 33px 0 10px 30px;
+}
+.forms::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: conic-gradient(from var(--aa),
+			#80d0ff 0%,
+			#80d0ff 5%,
+			transparent 5%,
+			transparent 5%,
+			transparent 50%);
+	animation: animate 6s linear infinite;
+	z-index: -1;
+	border-radius: 20px;
+}
+
+.forms::after {
+	content: "";
+	position: absolute;
+	inset: 1px;
+	background: #000;
+	z-index: -1;
+	border-radius: 20px;
+}
+
+@property --aa {
+	syntax: "<angle>";
+	inherits: false;
+	initial-value: 0deg;
+}
+@keyframes animate {
+	0% {
+		--aa: 0deg;
+	}
+	100%{
+		--aa: 360deg;
+	}
+}
+@media screen and (max-width:768px) {
+	.forms{
+		width: 90%;
+	}
+}
