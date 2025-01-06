@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card_Task</title>
     <link rel="stylesheet" href="../card_brightness_change/card_brightness_change.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="parent">
+<body>
     <input type="checkbox" id="darkmode-toggle">
-    <label for="darkmode-toggle" class=""> </label>
+    <label for="darkmode-toggle" class="">
+        <img src="./brightness-svgrepo-com.svg" alt="brightness-svg" class="sun">
+        <img src="./moon-svgrepo-com.svg" alt="moon-svg" class="moon">
+    </label>
+
     <div class="container">
-        <img src="https://images.unsplash.com/photo-1462536943532-57a629f6cc60?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3"
-            alt="images">
-        <h1 class="text left">New brand name</h1>
-        <h4 class="text left">Size</h4>
-        <ul class="items">
-            <li class="boxes"><button class="list-items-boxes">31</button></li>
-            <li class="boxes"><button class="list-items-boxes">32</button></li>
-            <li class="boxes"><button class="list-items-boxes">33</button></li>
-            <li class="boxes"><button class="list-items-boxes">34</button></li>
-            <li class="boxes"><button class="list-items-boxes">35</button></li>
-            <li class="boxes"><button class="list-items-boxes">36</button></li>
-        </ul>
+        <img src="./unplash.jpg"alt="images">
+        <h1 class="text left" style="font-size: 25px;">New Brand Name</h1>
+
+        <div>
+            <h4 class="text" style="padding: 5px;font-size: 20px;">Size</h4>
+            <ul class="items">
+                <li class="boxes"><button class="list-items-boxes">31</button></li>
+                <li class="boxes"><button class="list-items-boxes">32</button></li>
+                <li class="boxes"><button class="list-items-boxes">33</button></li>
+                <li class="boxes"><button class="list-items-boxes">34</button></li>
+                <li class="boxes"><button class="list-items-boxes">35</button></li>
+                <li class="boxes"><button class="list-items-boxes">36</button></li>
+            </ul>
+        </div>
 
         <div class="bottom">
-            <h1 class="text">$299</h1>
-            <div class="background">
-                <button class="shopping">
-                    <p class="text"><i class="fa-solid fa-cart-shopping"></i>Add to cart</p>
-                </button>
-            </div>
+            <h1 class="text">&#36;299</h1>
+            <button class="shopping">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="text">Add to cart</span>
+            </button>
+
         </div>
     </div>
 </body>
