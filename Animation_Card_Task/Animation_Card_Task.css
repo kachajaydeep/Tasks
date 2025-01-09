@@ -7,7 +7,7 @@
   height: 100%;
   box-shadow: 0 0 10px 1px #000000ee;
   transform-style: preserve-3d;
-  transition: 3s transform;
+  transition: 200ms transform;
 }
 .front,.back{
   background-color: #151515;
