@@ -1,0 +1,125 @@
+.card{
+    width: 8em;
+    height: 8em;
+    font-family: "Montserrat";
+    background: #ae47ae;
+    border-radius: 50%;
+    box-shadow: inset -25px -25px 0px #a73dbd, 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.card:hover {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: 15.4em;
+    height: 22.9em;
+    padding-top: .4em;
+    padding-bottom: 1.5em;
+    background-color: #171717;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
+    background: linear-gradient(270deg, #ce68d9, #45c6db, #45db79);
+    background-size: 800% 800%;
+    animation: AnimationName 3s linear infinite;
+    transition: 0.4s ease-in-out;
+  }
+.card::before{
+    position: relative;
+    content: "Code Planet";
+    text-align: center;
+    color: white;
+    top: 3.4em;
+    left: 0.85em;
+}
+
+.card .content{
+    opacity: 0;
+    transition: 0.8s ease-in-out;
+}
+.card .heading{
+    opacity: 0;
+}
+.card button{
+    opacity: 0;
+}
+.card:hover .content{
+    opacity: 1;
+    transition: 0.8s ease-in-out;
+}
+.card:hover .heading{
+    opacity: 1;
+    transition: 0.8s ease-in-out;
+}
+.card:hover .content{
+    opacity: 1;
+    transition: 0.8s ease-in-out;
+}
+.card:hover button{
+    opacity: 1;
+    transition: 0.4s ease-in-out;
+}
+.card:hover::before{
+    opacity: 0;
+}
+@keyframes AnimationName{
+    0%{
+        background-position:0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    padding-bottom: 1em;
+    font-weight: bold;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2em;
+}
+.item{
+    display: flex;
+    color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4),0px 7px 13px -3px rgba(0, 0, 0, 0.3), inset 0 -3px 0 rgba(0, 0, 0, 0.2);
+    padding: 0.8em;
+    margin: 0.5em;
+    font-size: 0.8em;
+    gap: 10px;
+    border-radius: 15px;
+}
+.item:hover{
+    box-shadow: none;
+    transition: 0.8s ease-in-out;
+}
+.item--create{
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+}
+.item--post{
+    padding-left: 3em;
+    padding-right: 3em;
+}
+.item--inspire{
+    padding-left: 2.7em;
+    padding-right: 2.7em;
+}
+button{
+    border: 1px solid white;
+    align-self: center;
+    padding: 0.8em;
+    width: 14em;
+    font-weight: bold;
+    background: transparent;
+    color: white;
+    border-radius: 10px;
+}
