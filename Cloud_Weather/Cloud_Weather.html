@@ -1,14 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Cloud_Weather</title>
-     <link rel="stylesheet" href="./Cloud_Weather.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud_Weather</title>
+  <link rel="stylesheet" href="./Cloud_Weather.css">
 </head>
 <body>
-     <div class="container">
-          
-     </div>
+      <div class="card">
+          <section class="info-section">
+            <div class="background-design">
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+            <div class="left-side">
+              <div class="weather">
+                <div><img src="./brightness.svg" alt="brightness"></div>
+                <div>Sunny</div>
+              </div>
+              <div class="temperature">36°</div>
+              <div class="range">42°/28°</div>
+            </div>
+            <div class="right-side">
+              <div>
+                <div class="hour">23:56</div>
+                <div class="date">MON 08-23</div>
+              </div>
+
+              <div class="city">A Coruña</div>
+            </div>
+          </section>
+
+          <section class="days-section">
+            <button>
+              <span class="day">TUE</span>
+              <span class="icon-weather-day"><img src="./cloud.svg" alt="cloud"></span>
+            </button>
+            
+            <button>
+              <span class="day">WED</span>
+              <span class="icon-weather-day"><img src="./cloud.svg" alt="cloud"></span>
+            </button>
+
+            <button>
+              <span class="day">THU</span>
+              <span class="icon-weather-day"><img src="./cloud.svg" alt="cloud"></span>
+            </button>
+
+            <button>
+              <span class="day">FRI</span>
+              <span class="icon-weather-day"><img src="./cloud.svg" alt="cloud"></span>
+            </button>
+          </section>
+      </div>
 </body>
 </html>
