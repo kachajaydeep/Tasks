@@ -1,0 +1,95 @@
+.container{
+  width: 300px;
+  height: 250px;
+  border-radius: 10px;
+  padding: 1px;
+  background: radial-gradient(circle 230px at 0% 0%, #ffffff, #0c0d0d);
+  position: relative;
+}
+.dot{
+  width: 5px;
+  aspect-ratio: 1;
+  background-color: #fff;
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  border-radius: 100px;
+  animation: moveDot 6s linear infinite;
+  box-shadow: 0 0 10px #fff;
+}
+@keyframes moveDot {
+  0% , 100%{
+    top: 10%;
+    right: 10%;
+  }
+ 25%{
+  top: 10%;
+  right: calc(100% - 35px);
+ } 
+ 50%{
+  top: calc(100% - 30px);
+  right: calc(100% - 35px);
+ }
+ 75%{
+  top: calc(100% - 30px);
+  right: 10%;
+ } 
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #fff;
+  background: radial-gradient(circle 280px at 0% 0%, #444444, #0c0d0d);
+}
+.line{
+  height: 100%;
+  width:1%;
+  position: absolute;
+  background-color: #2c2c2c;
+}
+.rightl{
+  right: 10%;
+  width: 1px;
+  height: 100%;
+}
+.leftl{
+  left: 10%;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(180deg, #747474 30%, #222424 70%);
+}
+.topl{
+  top: 10%;
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(90deg, #888888 30%, #1d1f1f  70%);
+}
+.bottoml{
+  bottom: 10%;
+  height: 1px;
+  width: 100%;
+}
+.ray{
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 100px;
+  width: 200px;
+  height: 45px;
+  background-color: #c7c7c7;
+  transform: rotate(40deg);
+  transform-origin: 10%;
+  filter: blur(15px);
+  opacity: 0.4;
+  box-shadow: 0 0 50px #fff;
+}
+.card .text{
+  font-weight: bolder;
+  font-size: 4rem;
+  background: linear-gradient(45deg, #000000 4%,#fff, #000);
+  background-clip:text;
+  color: transparent;
+}
