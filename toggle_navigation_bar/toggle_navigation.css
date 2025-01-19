@@ -78,7 +78,7 @@ input:checked ~ .toggle .top_line{
     width: 25px;
     transform: rotate(45deg);
 }
-input:checked ~ .toggle .bottom_line{
+input:checked ~ .toggle .bottom_line{   
     left: 2px;
     top: 14px;
     width: 25px;
