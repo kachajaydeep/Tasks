@@ -5,6 +5,10 @@
   font-style: normal;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .header {
   height: 70px;
   display: flex;
@@ -25,7 +29,11 @@
   align-items: center;
   gap: 10px;
 }
-
+.service-container{
+  display: flex;
+  place-content: center;
+  gap: 10px;
+}
 input[type="checkbox"] {
   display: none;
 }
@@ -61,50 +69,69 @@ li a {
   visibility: hidden;
 }
 
-.container {
-  display: flex;
-  gap: 175px;
-  width: 90%;
-}
-
 .super-container {
   width: 100%;
   display: flex;
-  justify-content: center;
-}
-.left-side{
-  display: flex;
+  align-items: center;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 }
-.text-heading{
+
+.text-heading {
+  font-weight: 500;
   font-size: 4vw;
 }
-.Illustration{
-  width: 500px;
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 90%;
+  grid-template-rows: 100px 100px 100px;
+  row-gap: 40px;
 }
-.btn1{
-  width: 140px;
+
+picture {
+  grid-row: span 2;
+}
+
+.Illustration {
+  float: right;
+}
+
+.btn2 {
+  width: 135px;
   height: 40px;
-  border: none;
   background-color: #000;
-  color: #fff;
+  color: white;
 }
+
+.companies {
+  width: 90%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  place-items: center;
+}
+
 @media screen and (min-width:769px) and (max-width:1024px) {
   .slide {
     font-size: 10px !important;
   }
 }
-@media screen and (max-width:1024px) {
-  .container{
-    gap: 60px;
+
+@media screen and (min-width:1024px) {
+  .container {
+    grid-template-rows: 150px 100px 100px;
+    row-gap: 14px;
   }
-  .Illustration{
-    width: 375px;
+  .companies {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
 @media screen and (max-width:768px) {
   .toggle {
+    cursor: pointer;
     display: block;
     visibility: visible;
     position: absolute;
@@ -136,9 +163,8 @@ li a {
     top: 0;
     text-align: center;
     font-family: 'pops';
-    padding: 10px 0 44px 0;
+    padding: 40px 0 44px 0;
     flex-direction: column;
-    top: 23px;
   }
 
   .toggle .top_line {
@@ -181,18 +207,33 @@ li a {
   }
 
   input:checked~.toggle {
+    position: fixed;
     top: 10px;
     right: 90%;
   }
-  .container{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-  }
-  p{
-    grid-row: 2 / 3;
-  }
-  .Illustration{
 
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  picture {
+    grid-row: span 1;
+  }
+
+  .Illustration {
+    float: none;
+  }
+
+  .btn2 {
+    width: 100%;
+  }
+
+  .text-heading {
+    font-size: 50px;
+  }
+  .companies {
+    grid-template-columns: 1fr 1fr;
   }
 }
