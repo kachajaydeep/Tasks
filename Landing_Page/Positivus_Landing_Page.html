@@ -7,13 +7,14 @@
     <title>Positivus Landing_Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./Positivus_Landing_Page.css">
 </head>
 
 <body>
     <div class="header">
-        <div class="navbar">
+        <div class="navbar width">
             <div class="logo">
                 <img src="./Pngs/Vector.png" alt="Vector">
                 <img src="./Pngs/Positivus.png" alt="Positivus">
@@ -38,11 +39,10 @@
     </div>
 
     <div class="super-container">
-        <div class="container">
+        <div class="container width">
             <h1 class="text-heading">Navigating the digital landscape for success</h1>
             <picture>
                 <source media="(max-width: 24em)" srcset="./Pngs/Illustration.png" width="200px">
-                <!-- <source media="(max-width: 48em)" srcset="./Pngs/Illustration.png" width="300px"> -->
                 <source media="(max-width: 64em)" srcset="./Pngs/Illustration.png" width="300px">
                 <img class="Illustration" src="./Pngs/Illustration.png" alt="Illustration" width="400px">
             </picture>
@@ -51,7 +51,7 @@
             <button class="btn2">Book a consultation</button>
         </div>
 
-        <div class="companies">
+        <div class="companies width">
             <img src="./Pngs/amazon.png" alt="amazon">
             <img src="./Pngs/tribble.png" alt="tribble">
             <img src="./Pngs/hubspot.png" alt="hubspot">
@@ -60,13 +60,13 @@
             <img src="./Pngs/zoom.png" alt="zoom">
         </div>
 
-        <div class="service-container">
+        <div class="service-container width">
             <h1 class="service">Services</h1>
             <p>At our digital marketing agency, we offer a range of services to help businesses grow and succeed
                 online. These services include:</p>
         </div>
 
-        <div class="various-services">
+        <div class="various-services width">
             <div class="card1 bc-grey">
                 <div class="left-card">
                     <div>
@@ -181,7 +181,7 @@
         </div>
 
         <div class="make">
-            <div class="left-make">
+            <div class="left-make width">
                 <h2>Let’s make things happen</h2>
                 <p>Contact us today to learn more about how our digital marketing services can help your business grow
                     and succeed online.</p>
@@ -192,12 +192,12 @@
             </div>
         </div>
 
-        <div class="service-container">
+        <div class="service-container width">
             <h1 class="service">Case Studies</h1>
             <p>Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies</p>
         </div>
 
-        <div class="case-study">
+        <div class="case-study width">
             <div class="case">
                 <p>For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in
                     website
@@ -219,12 +219,12 @@
 
         </div>
 
-        <div class="service-container">
+        <div class="service-container width">
             <h1 class="service">Our Working Process</h1>
             <p>Step-by-Step Guide to Achieving Your Business Goals</p>
         </div>
 
-        <div class="drop-down">
+        <div class="drop-down width">
             <details>
                 <summary>
                     <div class="left-dropdown">
@@ -304,20 +304,21 @@
             </details>
         </div>
 
-        <div class="service-container">
+        <div class="service-container width">
             <h1 class="service">Team</h1>
             <p>Meet the skilled and experienced team behind our successful digital marketing strategies</p>
         </div>
 
-        <div class="ceo-container">
+        <div class="ceo-container width">
             <div class="ceo">
                 <div class="ceo-profile">
                     <picture>
-
+                        <source media="(max-width: 57em)" srcset="./Pngs/John_Smith.png" width="50px" height="50px">
+                        <source media="(max-width: 64em)" srcset="./Pngs/John_Smith.png" width="90px" height="90px">
                         <img class="ceo-img" src="./Pngs/John_Smith.png" alt="John_Smith">
                     </picture>
-                    <div class="ceo-name">
-                        <h1>John Smith</h1>
+                    <div class="ceo-detail">
+                        <h1 class="ceo-name">John Smith</h1>
                         <p>CEO and Founder</p>
                     </div>
                     <div class="linkdin-container">
@@ -332,10 +333,62 @@
 
             <div class="ceo">
                 <div class="ceo-profile">
-                    <img src="./Pngs/John_Smith.png" alt="John_Smith">
-                    <div class="ceo-name">
-                        <h1>John Smith</h1>
-                        <p>CEO and Founder</p>
+                    <picture>
+                        <source media="(max-width: 57em)" srcset="./Pngs/Jane_Doe.png" width="50px" height="50px">
+                        <source media="(max-width: 64em)" srcset="./Pngs/Jane_Doe.png" width="90px" height="90px">
+                        <img class="ceo-img" src="./Pngs/Jane_Doe.png" alt="John_Smith">
+                    </picture>
+
+                    <div class="ceo-detail">
+                        <h1 class="ceo-name">Jane Doe</h1>
+                        <p>Director of Operations</p>
+                    </div>
+
+                    <div class="linkdin-container">
+                        <img class="linkedin" src="./Pngs/linkedin.png" alt="linkedin">
+                    </div>
+
+                </div>
+                <div class="about-ceo">
+                    7+ years of experience in project management and team leadership. Strong organizational and
+                    communication skills
+                </div>
+            </div>
+
+            <div class="ceo">
+                <div class="ceo-profile">
+                    <picture>
+                        <source media="(max-width: 57em)" srcset="./Pngs/Michael_Brown.png" width="50px" height="50px">
+                        <source media="(max-width: 64em)" srcset="./Pngs/Michael_Brown.png" width="90px" height="90px">
+                        <img class="ceo-img" src="./Pngs/Michael_Brown.png" alt="John_Smith">
+                    </picture>
+
+                    <div class="ceo-detail">
+                        <h1 class="ceo-name">Michael Brown</h1>
+                        <p>Senior SEO Specialist</p>
+                    </div>
+
+                    <div class="linkdin-container">
+                        <img class="linkedin" src="./Pngs/linkedin.png" alt="linkedin">
+                    </div>
+
+                </div>
+                <div class="about-ceo">
+                    5+ years of experience in SEO and content creation. Proficient in keyword research and on-page
+                    optimization
+                </div>
+            </div>
+
+            <div class="ceo">
+                <div class="ceo-profile">
+                    <picture>
+                        <source media="(max-width: 57em)" srcset="./Pngs/Emily_Johnson.png" width="50px" height="50px">
+                        <source media="(max-width: 64em)" srcset="./Pngs/Emily_Johnson.png" width="90px" height="90px">
+                        <img class="ceo-img" src="./Pngs/Emily_Johnson.png" alt="John_Smith">
+                    </picture>
+                    <div class="ceo-detail">
+                        <h1 class="ceo-name">Emily Johnson</h1>
+                        <p>PPC Manager</p>
                     </div>
                     <div class="linkdin-container">
                         <img class="linkedin" src="./Pngs/linkedin.png" alt="linkedin">
@@ -343,10 +396,273 @@
 
                 </div>
                 <div class="about-ceo">
-                    10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy
+                    3+ years of experience in paid search advertising. Skilled in campaign management and performance
+                    analysis
+                </div>
+            </div>
+
+            <div class="ceo">
+                <div class="ceo-profile">
+                    <picture>
+                        <source media="(max-width: 57em)" srcset="./Pngs/Brian_Williams.png" width="50px" height="50px">
+                        <source media="(max-width: 64em)" srcset="./Pngs/Brian_Williams.png" width="90px" height="90px">
+                        <img class="ceo-img" src="./Pngs/Brian_Williams.png" alt="John_Smith">
+                    </picture>
+                    <div class="ceo-detail">
+                        <h1 class="ceo-name">Brian Williams</h1>
+                        <p>Social Media Specialist</p>
+                    </div>
+                    <div class="linkdin-container">
+                        <img class="linkedin" src="./Pngs/linkedin.png" alt="linkedin">
+                    </div>
+
+                </div>
+                <div class="about-ceo">
+                    4+ years of experience in social media marketing. Proficient in creating and scheduling content,
+                    analyzing metrics, and building engagement
+                </div>
+            </div>
+
+            <div class="ceo">
+                <div class="ceo-profile">
+                    <picture>
+                        <source media="(max-width: 57em)" srcset="./Pngs/Sarah_Kim.png" width="50px" height="50px">
+                        <source media="(max-width: 64em)" srcset="./Pngs/Sarah_Kim.png" width="90px" height="90px">
+                        <img class="ceo-img" src="./Pngs/Sarah_Kim.png" alt="Sarah_Kim">
+                    </picture>
+                    <div class="ceo-detail">
+                        <h1 class="ceo-name">Sarah Kim</h1>
+                        <p>Content Creator</p>
+                    </div>
+                    <div class="linkdin-container">
+                        <img class="linkedin" src="./Pngs/linkedin.png" alt="linkedin">
+                    </div>
+
+                </div>
+                <div class="about-ceo">
+                    2+ years of experience in writing and editing
+                    Skilled in creating compelling, SEO-optimized content for various industries
                 </div>
             </div>
         </div>
+
+        <div class="button-container width">
+            <div class="btn2 btn3">See all team</div>
+        </div>
+
+        <div class="service-container width">
+            <h1 class="service">Testimonials</h1>
+            <p>Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services
+            </p>
+        </div>
+
+        <div class="slide-container width">
+
+            <input type="radio" name="images" id="i1">
+            <input type="radio" name="images" id="i2">
+            <input type="radio" name="images" id="i3">
+            <input type="radio" name="images" id="i4">
+            <input type="radio" name="images" id="i5" checked>
+
+            <div class="slide_img" id="one">
+                <div class="black">
+                    <div class="black-text">"We have been working with Positivus for the past year and have seen a
+                        significant increase in website traffic and leads as a result of their efforts. The team is
+                        professional, responsive, and truly cares about the success of our business. We highly
+                        recommend
+                        Positivus to any company looking to grow their online presence."
+                    </div>
+                    <div class="after-container">
+                        <h1 style="color: #B9FF66;">John Smith</h1>
+                        <p>Marketing Director at XYZ Corp</p>
+                    </div>
+                </div>
+
+                <label class="prev" for="i5"><span>&#8592;</span></label>
+                <label class="next" for="i2"><span>&#8594;</span></label>
+            </div>
+
+            <div class="slide_img" id="two">
+                <div class="black">
+                    <div class="black-text">"We have been working with Positivus for the past year and have seen a
+                        significant increase in website traffic and leads as a result of their efforts. The team is
+                        professional, responsive, and truly cares about the success of our business. We highly
+                        recommend
+                        Positivus to any company looking to grow their online presence."
+                    </div>
+                    <div class="after-container">
+                        <h1 style="color: #B9FF66;">John Smith</h1>
+                        <p>Marketing Director at XYZ Corp</p>
+                    </div>
+                </div>
+
+                <label class="prev" for="i1"><span>&#8592;</span></label>
+                <label class="next" for="i3"><span>&#8594;</span></label>
+            </div>
+
+            <div class="slide_img" id="three">
+                <div class="black">
+                    <div class="black-text">"We have been working with Positivus for the past year and have seen a
+                        significant increase in website traffic and leads as a result of their efforts. The team is
+                        professional, responsive, and truly cares about the success of our business. We highly
+                        recommend
+                        Positivus to any company looking to grow their online presence."
+                    </div>
+                    <div class="after-container">
+                        <h1 style="color: #B9FF66;">John Smith</h1>
+                        <p>Marketing Director at XYZ Corp</p>
+                    </div>
+                </div>
+
+                <label class="prev" for="i2"><span>&#8592;</span></label>
+                <label class="next" for="i4"><span>&#8594;</span></label>
+            </div>
+
+            <div class="slide_img" id="four">
+                <div class="black">
+                    <div class="black-text">"We have been working with Positivus for the past year and have seen a
+                        significant increase in website traffic and leads as a result of their efforts. The team is
+                        professional, responsive, and truly cares about the success of our business. We highly
+                        recommend
+                        Positivus to any company looking to grow their online presence."
+                    </div>
+                    <div class="after-container">
+                        <h1 style="color: #B9FF66;">John Smith</h1>
+                        <p>Marketing Director at XYZ Corp</p>
+                    </div>
+                </div>
+
+                <label class="prev" for="i3"><span>&#8592;</span></label>
+                <label class="next" for="i5"><span>&#8594;</span></label>
+            </div>
+
+            <div class="slide_img" id="five">
+                <div class="black">
+                    <div class="black-text">"We have been working with Positivus for the past year and have seen a
+                        significant increase in website traffic and leads as a result of their efforts. The team is
+                        professional, responsive, and truly cares about the success of our business. We highly
+                        recommend
+                        Positivus to any company looking to grow their online presence."
+                    </div>
+                    <div class="after-container">
+                        <h1 style="color: #B9FF66;">John Smith</h1>
+                        <p>Marketing Director at XYZ Corp</p>
+                    </div>
+                </div>
+
+                <label class="prev" for="i4"><span>&#8592;</span></label>
+                <label class="next" for="i1"><span>&#8594;</span></label>
+            </div>
+
+            <div id="nav_slide">
+                <label for="i1" class="dots" id="dot1"></label>
+                <label for="i2" class="dots" id="dot2"></label>
+                <label for="i3" class="dots" id="dot3"></label>
+                <label for="i4" class="dots" id="dot4"></label>
+                <label for="i5" class="dots" id="dot5"></label>
+            </div>
+
+        </div>
+
+        <div class="service-container width">
+            <h1 class="service">Contact Us</h1>
+            <p>Connect with Us: Let's Discuss Your Digital Marketing Needs</p>
+        </div>
+
+        <div class="sign-up">
+            <div class="left-form">
+                <form>
+                    <div class="radio-btn">
+                        <input type="radio" value="yes" name="option" id="yes" />
+                        <label class="form-control" for="yes">Say Hi</label>
+                
+                        <input type="radio" value="no" name="option" id="no" />
+                        <label class="form-control" for="no">Get a Quote</label>
+                    </div>
+
+                    <label for="name">Name*</label>
+                    <input class="form-input" type="text" id="name" name="Full_Name" placeholder="Name">
+
+                    <label for="email">Email*</label>
+                    <input class="form-input" type="email" id="email" name="mail" placeholder="Email">
+
+                    <label for="message">Message*</label>
+                    <textarea class="form-input" name="message" id="message" placeholder="Message" cols="20" rows="5"></textarea>
+
+                    <button class="btn3 btn4">send message</button>
+                </form>
+            </div>
+
+            <div class="right-form">
+                <picture>
+                    <source media="" src="./Pngs/form.png">
+                    <source media="" src="./Pngs/form.png">
+                    <img class="form-img" src="./Pngs/form.png" alt="form" width="530px" >
+                </picture>
+            </div>
+        </div>
+
+        <footer class="width"> 
+            <div class="top-footer">
+                <div class="left-logo">
+                    <img src="./Pngs/Iconv.png" alt="Iconv">
+                    <img src="./Pngs/Positivus2.png" alt="Positivus2">
+                </div>
+                <div class="center-header">
+                    <li class="white"><a href="#">About us</a></li>
+                    <li class="white"><a href="#">Services</a></li>
+                    <li class="white"><a href="#">Use Cases</a></li>
+                    <li class="white"><a href="#">Pricing</a></li>
+                    <li class="white"><a href="#">Blog</a></li>
+                </div>
+                <div class="right-side-header">
+                    <div class="c-icon">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+
+                    <div class="c-icon facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+
+                    <div class="c-icon">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <div class="center-footer">
+                    <div class="left-center">
+                        <h3 class="contact">Contact us:</h3>
+                        <p class="white">Email: <a class="white" href="mailto:info@positivus.com">info@positivus.com</a></p>
+                        <p class="white">Phone: <a class="white" href="tel:+555-567-8901">555-567-8901</a></p>
+                        <p class="white">Address: 1234 Main St <br>Moonstone City, Stardust State 12345</p>
+                    </div>
+
+                    <div class="right-center">
+                        <input type="email" name="Email" id="myEmail" placeholder="Email">
+                        <p class="contact2">Subscribe to news</p>
+                    </div>
+                    <div class="visible">
+                        <div class="c-icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+    
+                        <div class="c-icon facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+    
+                        <div class="c-icon">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="privacy">
+                <div class="left-bottom"><p class="white">Privacy Policy</p></div>
+                <div class="right-bottom"><p class="white">© 2023 Positivus. All Rights Reserved.</p></div>
+            </div>
+        </footer>
     </div>
 
 
