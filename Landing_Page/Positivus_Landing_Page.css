@@ -552,6 +552,7 @@ input[type="radio"]:checked+label.form-control::before {
   border-radius: 20px;
   border: none;
   outline: 1px solid black;
+  width: 340px;
 }
 
 form {
@@ -642,7 +643,7 @@ div.facebook {
 
 .c-icon {
   background-color: white;
-  padding: 6px 9px;
+  padding: 6px 11px;
   border-radius: 50%;
 }
 
@@ -658,7 +659,7 @@ div.facebook {
 .center-footer {
   display: flex;
   justify-content: space-between;
-  padding: 0px 20px 50px 0px;
+  padding: 25px 0 25px 0;
 }
 
 .left-center {
@@ -948,20 +949,18 @@ div.facebook {
     right: 23%;
   }
 
-  .right-form {
-    display: none;
-    visibility: hidden;
-  }
-
   .sign-up {
     justify-content: center;
   }
-
+  div.btn3{
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 1000px) {
   input[type=email] {
     width: 85%;
+    padding: 10px 17px;
   }
 
   .center-header {
@@ -993,6 +992,7 @@ div.facebook {
 
   .contact2 {
     width: 85%;
+    font-size: 15px;
   }
 
   .center-footer {
@@ -1012,6 +1012,16 @@ div.facebook {
     justify-content: center;
     gap: 20px;
   }
+  .button-container {
+    width: 100%;
+    justify-content: center;
+}
+
+.right-form {
+  display: none;
+  visibility: hidden;
+}
+
 }
 
 @media screen and (max-width:500px) {
@@ -1044,4 +1054,21 @@ div.facebook {
     bottom: 0;
     left: 13%;
   }
+  #name, #email, #message {
+    display: block;
+    background-color: #fff;
+    padding: 10px 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+    outline: 1px solid black;
+    width: 240px;
+}
+form{
+  width: 90%;
+}
+.btn2{
+  width: 100%;
+}
+
 }
