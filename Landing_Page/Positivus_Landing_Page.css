@@ -316,7 +316,7 @@ details>summary {
 }
 
 summary::after {
-  content: url(./Pngs/plus.svg);
+  content: url('./Pngs/plus.svg');
   border: 1px solid black;
   border-radius: 50%;
   padding: 11px 10px 4px 10px;
@@ -334,7 +334,7 @@ details[open] {
     padding: 20px 5px;
 
     &::after {
-      content: url(./Pngs/minus.svg);
+      content: url('./Pngs/minus.svg');
       background-color: #F3F3F3;
     }
   }
@@ -620,7 +620,7 @@ footer {
 }
 
 .top-footer {
-  width: 85%;
+  /* width: 85%; */
   height: 100px;
   display: flex;
   align-items: center;
@@ -777,6 +777,7 @@ div.facebook {
     height: 30px;
     z-index: 1;
     transition: 0.9s ease;
+    z-index: 101;
   }
 
   .toggle .common {
@@ -801,6 +802,7 @@ div.facebook {
     font-family: 'pops';
     padding: 40px 0 44px 0;
     flex-direction: column;
+    z-index: 100;
   }
 
   .toggle .top_line {
@@ -941,6 +943,7 @@ div.facebook {
 
   .ceo-container {
     grid-template-columns: 1fr;
+    row-gap: 35px;
   }
 
   .slide-container {
@@ -1122,11 +1125,14 @@ div.facebook {
     border-radius: 20px;
     border: none;
     outline: 1px solid black;
-    width: 240px;
+    width: 214px;
   }
 
   form {
     width: 90%;
   }
 
+  .radio-btn{
+    width: 226px;
+  }
 }
