@@ -516,7 +516,7 @@ label span {
 
 .after-container {
   color: white;
-  padding-left: 20px;
+  padding-left: 44px;
   margin-top: 30px;
 }
 .after-container h1{
@@ -949,7 +949,7 @@ div.facebook {
   }
 
   .slide-container {
-    height: 400px;
+    height: 550px;
   }
 
   #nav_slide {
@@ -964,7 +964,7 @@ div.facebook {
     background-color: #000;
     color: white;
     border: 3px solid #B9FF66;
-    padding: 0vh 3vw;
+    padding: 7vh 3vw;
     border-radius: 30px;
     /* font-size: 11px; */
     font-size: 2.3vw;
@@ -975,8 +975,8 @@ div.facebook {
   .after-container {
     font-size: 9px;
     position: absolute;
-    bottom: 123px;
-    left: 216px;
+    bottom: 66px;
+    left: 9%;
   }
 
   .prev {
@@ -993,6 +993,7 @@ div.facebook {
 
   div.btn3 {
     width: 80%;
+    font-size: 11px;
   }
   .service-para{
     width: auto;
@@ -1113,7 +1114,7 @@ div.facebook {
   .after-container {
     position: relative;
     bottom: 0;
-    left: 13%;
+    left: 0%;
   }
 
   #name,
