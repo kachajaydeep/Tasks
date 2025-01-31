@@ -9,6 +9,12 @@
   overflow: scroll;
 }
 
+.digital-para {
+  font-size: 20px;
+}
+#myEmail::placeholder{
+  color: #fff;
+}
 .header {
   height: 70px;
   display: flex;
@@ -32,14 +38,18 @@
   align-items: center;
   gap: 10px;
 }
-
+.left-logo{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 input[type="checkbox"] {
   display: none;
 }
 
 .navbar .slide {
   display: flex;
-  gap: 20px;
+  gap: 27px;
   align-items: center;
   font-size: 17px;
   font-weight: 300;
@@ -50,11 +60,14 @@ li {
   list-style: none;
 }
 
-li a {
+ul.slide li a {
   text-decoration: none;
   color: #000;
+  font-size: 21px;
 }
-
+p.white a{
+  text-decoration: none;
+}
 .btn {
   height: 50px;
   background-color: #fff;
@@ -73,24 +86,25 @@ li a {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 50px;
+  gap: 65px;
 }
 
 .text-heading {
   font-weight: 500;
-  font-size: 50px;
+  font-size: 5vw;
   grid-area: 1 / 1 / 2 / 2;
+  line-height: 1.2;
 }
 
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 150px 80px 50px;
   row-gap: 20px;
+  grid-template-rows: 0.5fr 0.2fr 0.4fr;
 }
 
 picture {
-  grid-row: span 2;
+  grid-row: span 3;
 }
 
 .Illustration {
@@ -98,7 +112,7 @@ picture {
 }
 
 .btn2 {
-  padding: 5px;
+  padding: 9px 7px;
   background-color: #000;
   color: white;
   width: 150px;
@@ -115,9 +129,8 @@ picture {
 
 .companies {
   height: 100%;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  place-items: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .service-container {
@@ -133,7 +146,15 @@ picture {
   border-radius: 5px;
   text-align: center;
 }
-
+.service-para{
+  width: 46%;
+}
+.p3{
+  width: 23%;
+}
+.p4{
+  width: 36%;
+}
 .various-services {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -173,6 +194,7 @@ picture {
 .card-img {
   width: 15vw;
   aspect-ratio: 1;
+  object-fit: contain;
 }
 
 .bc-grey {
@@ -208,7 +230,7 @@ picture {
   gap: 6vw;
   background-color: rgb(243, 243, 243);
   border-radius: 25px;
-  height: 210px;
+  /* height: 320px; */
   padding: 4% 5% 0 3%;
 }
 
@@ -217,6 +239,12 @@ picture {
   flex-direction: column;
   row-gap: 30px;
   width: 60%;
+  justify-content: center;
+}
+
+.right-make {
+  position: relative;
+  bottom: 63px;
 }
 
 div.btn3 {
@@ -227,15 +255,13 @@ div.btn3 {
 
 .Digital_marketin {
   height: 302px;
-  position: relative;
-  bottom: 50px;
 }
 
 .case-study {
   display: flex;
   justify-content: center;
   column-gap: 25px;
-  height: 250px;
+  height: 300px;
   align-items: center;
   background-color: #000;
   border-radius: 35px;
@@ -270,7 +296,7 @@ a.learn {
 
 details {
   padding: 40px;
-  border-radius: 20px;
+  border-radius: 45px;
   box-shadow: 1px 5px 0px 0px rgb(0, 0, 0);
   border: 1px solid black;
 }
@@ -290,11 +316,10 @@ details>summary {
 }
 
 summary::after {
-  content: "+";
+  content: url(./Pngs/plus.svg);
   border: 1px solid black;
-  font-size: 2.75em;
   border-radius: 50%;
-  line-height: 0.69;
+  padding: 11px 10px 4px 10px;
 }
 
 details[open] {
@@ -309,7 +334,7 @@ details[open] {
     padding: 20px 5px;
 
     &::after {
-      content: "−";
+      content: url(./Pngs/minus.svg);
       background-color: #F3F3F3;
     }
   }
@@ -352,6 +377,7 @@ details[open] {
   border-bottom: 1px solid black;
   padding: 30px 0;
   column-gap: 10px;
+  align-items: center;
 }
 
 .ceo-detail {
@@ -363,9 +389,8 @@ details[open] {
   position: absolute;
   background-color: #000000;
   padding: 8px 9px 6px 10px;
-  /* 6px 6px 4px 7px */
   border-radius: 50%;
-  top: 30px;
+  top: 42px;
   right: 30px;
 }
 
@@ -376,12 +401,10 @@ details[open] {
 
 .black-text {
   position: relative;
-  width: 500px;
-  height: 150px;
   background-color: #000;
-  color: white;
+  color: #fff;
   border: 3px solid #B9FF66;
-  padding: 30px;
+  padding: 25px;
   border-radius: 30px;
 }
 
@@ -410,13 +433,12 @@ details[open] {
 }
 
 .slide-container {
-  display: flex;
-  justify-content: center;
+  max-width: 90%;
   position: relative;
-  height: 30px;
-  padding-bottom: 38%;
-  background-color: #000;
+  height: 550px;
   border-radius: 35px;
+  overflow: hidden;
+  background-color: #000;
 }
 
 #i1,
@@ -434,14 +456,17 @@ details[open] {
 }
 
 .slide-container .slide_img .black {
-  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
 }
-
+.testimonial-wrapper{
+  width: 45%;
+  max-width: 500px;
+}
 .prev,
 .next {
   position: absolute;
@@ -470,12 +495,13 @@ label span {
 }
 
 .slide-container #nav_slide {
-  bottom: 2.7%;
+  bottom: 5%;
   height: 14px;
   position: absolute;
   text-align: center;
   z-index: 99;
   cursor: default;
+  width: 100%;
 }
 
 #nav_slide .dots {
@@ -490,7 +516,13 @@ label span {
 
 .after-container {
   color: white;
-  transform: translate(-56%, 26px);
+  padding-left: 20px;
+  margin-top: 30px;
+}
+.after-container h1{
+  color: #B9FF66;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .slide_img {
@@ -566,7 +598,9 @@ form {
   object-fit: cover;
   object-position: 218px 0;
 }
-
+.form-input{
+  resize: none;
+}
 @keyframes scroll {
   0% {
     opacity: .4;
@@ -592,6 +626,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding: 50px 50px;
+  gap: 20px;
 }
 
 .center-header {
@@ -602,6 +637,7 @@ footer {
 
 li.white a {
   color: #fff;
+  text-decoration-color: white;
 }
 
 .white {
@@ -701,22 +737,21 @@ div.facebook {
   .btn2 {
     width: 100%;
   }
-  .container{
-    grid-template-rows: 100px 80px 50px;
-    row-gap: 40px;
+
+  .container {
+    grid-template-rows: 65px 131px 41px;
+    row-gap: 4vh;
   }
-  .text-heading{
+
+  .text-heading {
     font-size: 30px;
   }
-  /* .container {
-    row-gap: 14px;
-  } */
 }
 
 @media screen and (max-width:1024px) {
-
-
   .companies {
+    display: grid;
+    place-items: center;
     grid-template-columns: repeat(3, 1fr);
   }
 
@@ -730,7 +765,6 @@ div.facebook {
   }
 
   .linkdin-container {
-    /* padding: 2px 7px 3px 8px; */
     padding: 0px 7px 0px 8px;
   }
 }
@@ -838,6 +872,8 @@ div.facebook {
 
   .text-heading {
     font-size: 50px;
+    text-align: center;
+    align-self: center;
   }
 
   .companies {
@@ -900,9 +936,11 @@ div.facebook {
     font-size: 20px;
     font-weight: 600;
   }
-
+  details{
+    padding: 20px;
+  }
   .drop-para {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
   }
 
@@ -911,7 +949,7 @@ div.facebook {
   }
 
   .slide-container {
-    height: 250px;
+    height: 400px;
   }
 
   #nav_slide {
@@ -952,8 +990,13 @@ div.facebook {
   .sign-up {
     justify-content: center;
   }
-  div.btn3{
+
+  div.btn3 {
     width: 80%;
+  }
+  .service-para{
+    width: auto;
+    text-align: center;
   }
 }
 
@@ -962,7 +1005,15 @@ div.facebook {
     width: 85%;
     padding: 10px 17px;
   }
+  .testimonial-wrapper {
+    width: 90%;
+    display: none;
+  }
 
+  /* Show only first testimonial in each slide for mobile */
+  .testimonial-wrapper:first-child {
+    display: block;
+  }
   .center-header {
     flex-direction: column;
   }
@@ -976,9 +1027,11 @@ div.facebook {
     align-items: center;
     text-align: center;
   }
-  footer{
+
+  footer {
     border-radius: 0;
   }
+
   .top-footer {
     flex-direction: column;
     align-items: center;
@@ -1012,15 +1065,23 @@ div.facebook {
     justify-content: center;
     gap: 20px;
   }
+
   .button-container {
     width: 100%;
     justify-content: center;
-}
+  }
 
-.right-form {
-  display: none;
-  visibility: hidden;
-}
+  ul.slide li a, li a {
+    font-size: 12px;
+  }
+
+  .right-form {
+    display: none;
+    visibility: hidden;
+  }
+  li.white a {
+    text-decoration: none;
+  }
 
 }
 
@@ -1054,7 +1115,10 @@ div.facebook {
     bottom: 0;
     left: 13%;
   }
-  #name, #email, #message {
+
+  #name,
+  #email,
+  #message {
     display: block;
     background-color: #fff;
     padding: 10px 10px;
@@ -1063,12 +1127,14 @@ div.facebook {
     border: none;
     outline: 1px solid black;
     width: 240px;
-}
-form{
-  width: 90%;
-}
-.btn2{
-  width: 100%;
-}
+  }
+
+  form {
+    width: 90%;
+  }
+
+  .btn2 {
+    width: 100%;
+  }
 
 }
