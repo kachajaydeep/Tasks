@@ -354,7 +354,7 @@ details[open] {
 .ceo-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 3vw;
 }
 
 .ceo {
@@ -495,7 +495,7 @@ label span {
 }
 
 .slide-container #nav_slide {
-  bottom: 5%;
+  bottom: 4.2%;
   height: 14px;
   position: absolute;
   text-align: center;
@@ -674,7 +674,7 @@ input[type=email] {
 }
 
 div.facebook {
-  padding: 6px 12px;
+  padding: 6px 13px;
 }
 
 .c-icon {
@@ -732,10 +732,6 @@ div.facebook {
 @media screen and (min-width:769px) and (max-width:1024px) {
   .slide {
     font-size: 10px !important;
-  }
-
-  .btn2 {
-    width: 100%;
   }
 
   .container {
@@ -866,14 +862,13 @@ div.facebook {
     float: none;
   }
 
-  .btn2 {
-    align-self: flex-start;
+  button.btn2 {
+    align-self: center;
+    width: 90%;
   }
 
   .text-heading {
     font-size: 50px;
-    text-align: center;
-    align-self: center;
   }
 
   .companies {
@@ -949,7 +944,7 @@ div.facebook {
   }
 
   .slide-container {
-    height: 550px;
+    height: 600px;
   }
 
   #nav_slide {
@@ -987,10 +982,6 @@ div.facebook {
     right: 23%;
   }
 
-  .sign-up {
-    justify-content: center;
-  }
-
   div.btn3 {
     width: 80%;
     font-size: 11px;
@@ -1011,7 +1002,6 @@ div.facebook {
     display: none;
   }
 
-  /* Show only first testimonial in each slide for mobile */
   .testimonial-wrapper:first-child {
     display: block;
   }
@@ -1068,10 +1058,12 @@ div.facebook {
   }
 
   .button-container {
-    width: 100%;
+    width: 90%;
     justify-content: center;
   }
-
+  div.btn3{
+    width: 90%;
+  }
   ul.slide li a, li a {
     font-size: 12px;
   }
@@ -1082,6 +1074,9 @@ div.facebook {
   }
   li.white a {
     text-decoration: none;
+  }
+  .sign-up {
+    justify-content: center;
   }
 
 }
@@ -1132,10 +1127,6 @@ div.facebook {
 
   form {
     width: 90%;
-  }
-
-  .btn2 {
-    width: 100%;
   }
 
 }
