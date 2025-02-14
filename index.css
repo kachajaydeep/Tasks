@@ -1,46 +1,53 @@
 *{
     box-sizing: border-box;
-}
-body{
     margin: 0;
-}
-@font-face {
-    font-family: JosefinSans;
-    src: url('./JosefinSans-Bold.ttf');
-}
-header{
-    background-color: rgba(236, 157, 37, 0.5);
-    padding: 25px;
-    text-align: center;
-    font-family: JosefinSans;
-}
-details{
+    padding: 0;
+    font-family: "Noto Sans", serif;
+ }
+ body{
+    min-height: 100vh;
+    min-width: 100vw;
+    background: url('./img4.jpg') no-repeat center center fixed;
+    background-size: cover;
+ }
+ ::-webkit-scrollbar{
+    overflow: scroll;
+ }
+ .container {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    gap: 10px;
-}
-summary{
-    background-color: rgba(204, 72, 133, 0.5);
-    color: black;
-}
-a:link,a:visited{
-    text-decoration: none;
-    border:2px solid black;
-    background-image: linear-gradient(0deg , #6d28d9 50% , #d9d9d9 125%);
-    color: white;
-    padding: 12px;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0,0.3), 0 0 13px rgba(0, 0, 0,0.27);
-}
-.display{
-    margin: 15px 0;
+    gap: 20px;
+ }
+ 
+ .file-container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+ }
+ .content{
+    display: flex;
+    gap: 20px;
     flex-wrap: wrap;
-    gap: 10px;
-}
-@media screen and (max-width:768px) {
-    .display{
-        flex-direction: column;
-    }
-}
+    justify-content: center;
+ }
+ a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 1px 2px 0 1px rgba(0,112,255, 1);
+    border-radius: 20px;
+ }
+ 
+ .btn {
+    background-color: purple;
+    border: 1px solid black;
+    width: 80%;
+    color: #fff;
+    display: block;
+    text-align: center;
+ }
