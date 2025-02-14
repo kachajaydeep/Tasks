@@ -775,7 +775,7 @@ div.facebook {
     width: 30px;
     height: 30px;
     z-index: 1;
-    transition: 0.9s ease;
+    transition: 0.4s linear;
     z-index: 101;
   }
 
@@ -786,7 +786,7 @@ div.facebook {
     height: 2px;
     background-color: #000000;
     border-radius: 50px;
-    transition: 0.3s ease;
+    transition: 0.3s linear;
   }
 
   .slide {
