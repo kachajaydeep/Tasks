@@ -626,6 +626,7 @@ footer {
   justify-content: space-between;
   padding: 50px 50px;
   gap: 20px;
+  width: 84%;
 }
 
 .center-header {
