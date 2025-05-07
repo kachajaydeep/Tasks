@@ -79,6 +79,7 @@ p.white a {
     background-color: #fff;
     border-radius: 10px;
     width: 130px;
+    cursor: pointer;
 }
 
 .toggle {
@@ -123,6 +124,7 @@ picture {
     color: white;
     width: 150px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .btn4 {
