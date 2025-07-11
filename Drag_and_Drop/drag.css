@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    line-height: 2rem;
+}
+body{
+    background-color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: url('./pexels-pixabay-60597.jpg') no-repeat center center fixed;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    margin-top: 1rem;
+}
+.droparea{
+    text-align: center;
+    border: 4px dashed grey;
+    max-width: 100%;
+    width: 484px;
+    height: 160px;
+    border-radius: 15px;
+}
+.droparea i {
+    font-size: 3rem;
+    flex-grow: 1;
+    padding-top: 1rem;
+}
+.green-border{
+    border-color: green;
+}
+section > i {
+    color: turquoise;
+}
+section > p {
+    color: turquoise;
+}
+
+@media screen and (max-width:500px) {
+    .droparea{
+        width: 300px;
+    }
+}
