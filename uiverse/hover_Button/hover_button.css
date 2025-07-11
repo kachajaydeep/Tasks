@@ -1,0 +1,17 @@
+.button {
+     position: relative;
+     text-decoration: none;
+     color: #fff;
+     background: linear-gradient(45deg, #0ce39a, #69007f, #fc0987);
+}
+
+.button span{
+     position: relative;
+     z-index: 1;
+}
+
+.button::before{
+     content: "";
+     position: absolute;
+     
+}
